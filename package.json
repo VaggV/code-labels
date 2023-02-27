@@ -12,10 +12,27 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "code-labels",
+          "title": "Code Labels",
+          "icon": "icons/testicon.svg"
+        }
+      ]
+    },
+    "views": {
+      "code-labels": [
+        {
+          "id": "testTreeView",
+          "name": "Code Labels"
+        }
+      ]
+    },
     "commands": [
       {
-        "command": "code-labels.helloWorld",
-        "title": "Hello World"
+        "command": "code-labels.showTreeView",
+        "title": "Show Tree View"
       }
     ]
   },

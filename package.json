@@ -1,7 +1,7 @@
 {
-  "name": "code-labels",
+  "name": "vscode-labels",
   "displayName": "Code Labels",
-  "description": "Create some labels in your code and see an outline on the tab ",
+  "description": "Create labels and view them all in a tree view",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.75.0"
@@ -15,7 +15,7 @@
     "viewsContainers": {
       "activitybar": [
         {
-          "id": "code-labels",
+          "id": "vscode-labels",
           "title": "Code Labels",
           "icon": "icons/testicon.svg"
         }
@@ -28,13 +28,7 @@
           "name": "Code Labels"
         }
       ]
-    },
-    "commands": [
-      {
-        "command": "code-labels.showTreeView",
-        "title": "Show Tree View"
-      }
-    ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",

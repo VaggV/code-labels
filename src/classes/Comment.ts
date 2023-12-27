@@ -1,5 +1,4 @@
-
-class Comment {
+export class Comment {
 	text: string;
 	line: number;
 
